@@ -80,6 +80,9 @@ p {
   /* margin-left:140px; */
   margin-right: 24px;
 }
+.fixed-menu a {
+  text-decoration: none;
+}
 /* 2nd website of country match styles */
 .country-matches {
   display: grid;
@@ -145,9 +148,6 @@ p {
   margin: 30px;
 }
 
-.match-button a {
-  text-decoration: none;
-}
 /* match blogs styles */
 /* .flexible-match-blog{
     flex-grow:1;
@@ -240,10 +240,10 @@ footer {
 }
 
 /* for tab view of media queries */
-@media screen and (min-width: 688px) and (max-width: 992px) {
-  .match-blogs {
+@media screen and (max-width: 688px) {
+  /* .match-blogs {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .footer-text-label {
     width: 635px;
     flex-wrap: wrap;
@@ -264,5 +264,21 @@ footer {
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
+  }
+  .match-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fixed-menu {
+    width: auto;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .match {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    height: auto;
   }
 }
