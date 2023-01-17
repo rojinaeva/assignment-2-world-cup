@@ -145,7 +145,6 @@ p {
   margin: 30px;
 }
 
-
 .match-button a {
   text-decoration: none;
 }
@@ -238,4 +237,32 @@ footer {
   display: flex;
   justify-content: center;
   gap: 35px;
+}
+
+/* for tab view of media queries */
+@media screen and (min-width: 688px) and (max-width: 992px) {
+  .match-blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-text-label {
+    width: 635px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .view-button {
+    width: 131px;
+    background: #dd0000;
+    border-radius: 5px;
+    padding: 12px 29px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .view-button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
